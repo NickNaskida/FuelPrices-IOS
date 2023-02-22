@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DEBCEF29A66B5100BAD43B /* FuelPrices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelPrices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPricesApp.swift; sourceTree = "<group>"; };
 		01DEBCF429A66B5100BAD43B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01DEBCF629A66B5100BAD43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		01DEBCF029A66B5100BAD43B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01DEBCEF29A66B5100BAD43B /* FuelPrices.app */,
+				01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */,
 				01DEBCFF29A66B5200BAD43B /* FuelPricesTests.xctest */,
 				01DEBD0929A66B5200BAD43B /* FuelPricesUITests.xctest */,
 			);
@@ -144,7 +144,7 @@
 			);
 			name = FuelPrices;
 			productName = FuelPrices;
-			productReference = 01DEBCEF29A66B5100BAD43B /* FuelPrices.app */;
+			productReference = 01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */;
 			productType = "com.apple.product-type.application";
 		};
 		01DEBCFE29A66B5200BAD43B /* FuelPricesTests */ = {
@@ -430,7 +430,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk.FuelPrices;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fuel Prices";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +458,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk.FuelPrices;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fuel Prices";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
