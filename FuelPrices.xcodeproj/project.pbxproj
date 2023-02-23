@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016D2F4629A7758500787726 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D2F4529A7758500787726 /* Model.swift */; };
 		01DEBCF329A66B5100BAD43B /* FuelPricesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */; };
 		01DEBCF529A66B5100BAD43B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEBCF429A66B5100BAD43B /* ContentView.swift */; };
 		01DEBCF729A66B5100BAD43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DEBCF629A66B5100BAD43B /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016D2F4529A7758500787726 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelPricesApp.swift; sourceTree = "<group>"; };
 		01DEBCF429A66B5100BAD43B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */,
 				01DEBCF429A66B5100BAD43B /* ContentView.swift */,
+				016D2F4529A7758500787726 /* Model.swift */,
 				01DEBCF629A66B5100BAD43B /* Assets.xcassets */,
 				01DEBCF829A66B5100BAD43B /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016D2F4629A7758500787726 /* Model.swift in Sources */,
 				01DEBCF529A66B5100BAD43B /* ContentView.swift in Sources */,
 				01DEBCF329A66B5100BAD43B /* FuelPricesApp.swift in Sources */,
 			);
@@ -417,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FuelPrices/Preview Content\"";
+				DEVELOPMENT_TEAM = 8G8UWBHXLQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk.FuelPrices;
+				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk;
 				PRODUCT_NAME = "Fuel Prices";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FuelPrices/Preview Content\"";
+				DEVELOPMENT_TEAM = 8G8UWBHXLQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk.FuelPrices;
+				PRODUCT_BUNDLE_IDENTIFIER = sawvavi.tk;
 				PRODUCT_NAME = "Fuel Prices";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
