@@ -18,4 +18,21 @@ struct LowestPriceEntry: Codable, Identifiable {
     }
 }
 
-let test_lowest_price = LowestPriceEntry(fuel_type: "Test Fuel", price: 2.99, providers: ["Gulf", "Socar", "Lukoil", "Wissol", "Rompetrol"])
+struct CurrentPriceEntry: Codable, Identifiable {
+    let provider: String
+    let last_updated: String
+    let fuel: [Fuel]
+    
+    var id : String {
+        return provider
+    }
+}
+
+struct Fuel: Codable, Hashable {
+    let name: String
+    let type_alt: String
+    let price: Double
+    let change_rate: Int
+    let date: String
+    let last_updated: String
+}

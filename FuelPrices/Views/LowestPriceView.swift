@@ -8,6 +8,37 @@
 import SwiftUI
 
 struct LowestPriceView: View {
+    @State var results = [LowestPriceEntry]()
+    
+    var body: some View {
+        VStack {
+            ForEach(results, id: \.id) { item in
+                LowestPriceRow(item: item)
+            }
+        }.onAppear(perform: loadLowestPriceData)
+    }
+    
+    func loadLowestPriceData() {
+        guard let url = URL(string: "http://\(Config.APIBaseUrl)/api/lowest/") else {
+            print("Lowest price API endpoint is Invalid")
+            return
+        }
+        let request = URLRequest(url: url)
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data {
+                if let response = try? JSONDecoder().decode([LowestPriceEntry].self, from: data) {
+                    DispatchQueue.main.async {
+                        self.results = response
+                    }
+                    return
+                }
+            }
+        }.resume()
+    }
+}
+
+struct LowestPriceRow: View {
     let item: LowestPriceEntry
     
     var body: some View {
@@ -25,8 +56,6 @@ struct LowestPriceView: View {
                             .padding(.leading, 5)
                     }
                 }
-
-
             }
         }
     }
@@ -34,7 +63,7 @@ struct LowestPriceView: View {
 
 struct LowestPriceView_Previews: PreviewProvider {
     static var previews: some View {
-        LowestPriceView(item: test_lowest_price)
+        LowestPriceView()
             .previewLayout(.sizeThatFits)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0118704229A8B4A50013A7D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0118704129A8B4A50013A7D2 /* .gitignore */; };
+		0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118704629A90A590013A7D2 /* CurrentPriceView.swift */; };
 		016D2F4629A7758500787726 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D2F4529A7758500787726 /* Model.swift */; };
 		01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779529A7D21800B24490 /* LowestPriceView.swift */; };
 		01A3779829A7D2F300B24490 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779729A7D2F300B24490 /* Config.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0118704129A8B4A50013A7D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0118704629A90A590013A7D2 /* CurrentPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceView.swift; sourceTree = "<group>"; };
 		016D2F4529A7758500787726 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		01A3779529A7D21800B24490 /* LowestPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestPriceView.swift; sourceTree = "<group>"; };
 		01A3779729A7D2F300B24490 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -77,9 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0118704329A8B6220013A7D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01A3779529A7D21800B24490 /* LowestPriceView.swift */,
+				01DEBCF429A66B5100BAD43B /* ContentView.swift */,
+				0118704629A90A590013A7D2 /* CurrentPriceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		01DEBCE629A66B5100BAD43B = {
 			isa = PBXGroup;
 			children = (
+				0118704129A8B4A50013A7D2 /* .gitignore */,
 				01DEBCF129A66B5100BAD43B /* FuelPrices */,
 				01DEBD0229A66B5200BAD43B /* FuelPricesTests */,
 				01DEBD0C29A66B5200BAD43B /* FuelPricesUITests */,
@@ -100,9 +115,8 @@
 		01DEBCF129A66B5100BAD43B /* FuelPrices */ = {
 			isa = PBXGroup;
 			children = (
+				0118704329A8B6220013A7D2 /* Views */,
 				01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */,
-				01DEBCF429A66B5100BAD43B /* ContentView.swift */,
-				01A3779529A7D21800B24490 /* LowestPriceView.swift */,
 				01A3779729A7D2F300B24490 /* Config.swift */,
 				016D2F4529A7758500787726 /* Model.swift */,
 				01DEBCF629A66B5100BAD43B /* Assets.xcassets */,
@@ -241,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DEBCFA29A66B5100BAD43B /* Preview Assets.xcassets in Resources */,
+				0118704229A8B4A50013A7D2 /* .gitignore in Resources */,
 				01DEBCF729A66B5100BAD43B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */,
 				01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */,
 				016D2F4629A7758500787726 /* Model.swift in Sources */,
 				01A3779829A7D2F300B24490 /* Config.swift in Sources */,
