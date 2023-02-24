@@ -17,3 +17,5 @@ struct LowestPriceEntry: Codable, Identifiable {
         return fuel_type + String(price) + providers.joined()
     }
 }
+
+let test_lowest_price = LowestPriceEntry(fuel_type: "Test Fuel", price: 2.99, providers: ["Gulf", "Socar", "Lukoil", "Wissol", "Rompetrol"])
