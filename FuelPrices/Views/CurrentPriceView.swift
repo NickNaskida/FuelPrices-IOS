@@ -89,7 +89,7 @@ struct CurrentPriceCard: View {
             Spacer()
         }.frame(width: 300, height: 260)
             .padding(15)
-            .background(Color.white)
+            .background(Color("CardColor"))
             .overlay(
                 RoundedRectangle(cornerRadius: 15)
                     .stroke(Color("BorderColor"), lineWidth: 2)

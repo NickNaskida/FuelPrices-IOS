@@ -11,11 +11,18 @@ struct LowestPriceView: View {
     @State var results = [LowestPriceEntry]()
     
     var body: some View {
-        VStack {
+        LazyVStack {
             ForEach(results, id: \.id) { item in
                 LowestPriceRow(item: item)
             }
-        }.onAppear(perform: loadLowestPriceData)
+        }.padding(15)
+            .background(Color("CardColor"))
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color("BorderColor"), lineWidth: 2)
+            )
+            .cornerRadius(15)
+            .onAppear(perform: loadLowestPriceData)
     }
     
     func loadLowestPriceData() {

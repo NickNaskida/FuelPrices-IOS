@@ -13,6 +13,15 @@ struct ContentView: View {
             ZStack {
                 Color("BgColor").edgesIgnoringSafeArea(.all)
                 ScrollView(.vertical) {
+                    Text("საუკეთესო ფასები")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.vertical)
+                    LowestPriceView().padding(.horizontal)
+                    Text("ყველა ფასი")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.vertical)
                     ScrollView(.horizontal, showsIndicators: false) {
                         CurrentPriceView()
                     }
