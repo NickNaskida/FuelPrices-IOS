@@ -29,7 +29,7 @@ struct CurrentPriceView: View {
     }
     
     func loadCurrentPriceData() {
-        guard let url = URL(string: "http://\(Config.APIBaseUrl)/api/current/") else {
+        guard let url = URL(string: "\(Config.APIBaseUrl)/api/current/") else {
             print("Current price API endpoint is Invalid")
             return
         }
@@ -76,7 +76,8 @@ struct CurrentPriceCard: View {
             VStack {
                 ForEach(item.fuel, id: \.self) { fuel in
                     HStack {
-                        Text(String(format: "%.2f ₾ ", fuel.price)).fontWeight(.bold) + Text(fuel.name)
+                        Text(String(format: "%.2f ₾ ", fuel.price))
+                            .foregroundColor(Color("AccentColor")).fontWeight(.bold) + Text(fuel.name)
                         Spacer()
                         Text(String(format: "\(fuel.change_rate > 0 ? "↑" : (fuel.change_rate < 0 ? "↓" : "")) %.2f", abs(fuel.change_rate)))
                             .font(.subheadline)

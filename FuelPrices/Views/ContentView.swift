@@ -18,6 +18,7 @@ struct ContentView: View {
                     Text("მთავარი")
                 }.navigationTitle(Text("მთავარი"))
                     .navigationBarTitleDisplayMode(.inline)
+                    .dynamicTypeSize(.medium ... .large)
             }
         }
     }

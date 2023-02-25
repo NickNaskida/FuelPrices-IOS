@@ -35,7 +35,7 @@ struct LowestPriceView: View {
     }
     
     func loadLowestPriceData() {
-        guard let url = URL(string: "http://\(Config.APIBaseUrl)/api/lowest/") else {
+        guard let url = URL(string: "\(Config.APIBaseUrl)/api/lowest/") else {
             print("Lowest price API endpoint is Invalid")
             return
         }
@@ -61,8 +61,9 @@ struct LowestPriceRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(String(format: "%.2f  ", item.price))
-                    .foregroundColor(Color("AccentColor")).bold() +
+                Text(String(format: "%.2f ₾ ", item.price))
+                    .foregroundColor(Color("AccentColor"))
+                    .fontWeight(.bold) +
                 Text(item.fuel_type)
                 Spacer()
                 ForEach(item.providers.reversed(), id: \.self) { provider in
