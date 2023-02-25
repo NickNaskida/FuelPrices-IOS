@@ -18,7 +18,7 @@ monitor, compare fuel prices, and use API to access current prices
 
 You can change it in `Config.swift`
 
-```http
+```
   https://sawvavi.tk/api/
 ```
 
