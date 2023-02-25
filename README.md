@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./app/src/static/img/logo.png" width="140" title="Logo">
+    <img src="https://github.com/NickNaskida/FuelPrices/blob/master/app/src/static/img/logo.png" width="140" title="Logo">
     <h1>Fuel Prices IOS</h1>
     <small> <a href="https://github.com/NickNaskida/FuelPrices">Web Client</a> </small>
 </div>
@@ -8,6 +8,19 @@
 
 FuelPrices is an Open Source project that allows people to monitor Georgia's fuel prices. With this web and ios app people can
 monitor, compare fuel prices, and use API to access current prices
+
+<p>
+<img src="./img/AppLight.jpg" width="220" title="Preview Light">
+<img src="./img/AppDark.jpg" width="220" title="Preview Dark">
+</p>
+
+### API Base URL & Docs
+
+You can change it in `Config.swift`
+
+```http
+  https://sawvavi.tk/api/
+```
 
 ### 👨🏼‍🔬 Contributing
 
@@ -32,3 +45,8 @@ In general, we follow the "fork-and-pull" Git workflow
 - Open a Pull Request and wait for feedback.
 
 🎉 Thank you for your contribution!
+
+### License
+
+This project is licensed under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
+

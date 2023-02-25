@@ -9,22 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color("BgColor").edgesIgnoringSafeArea(.all)
-                ScrollView(.vertical) {
-                    Text("საუკეთესო ფასები")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .padding(.vertical)
-                    LowestPriceView()
-                    Text("ყველა ფასი")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .padding(.vertical)
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        CurrentPriceView()
-                    }
+        ZStack {
+            Color("BgColor").edgesIgnoringSafeArea(.all)
+            
+            TabView {
+                HomeView().tabItem {
+                    Image(systemName: "house")
+                    Text("მთავარი")
                 }.navigationTitle(Text("მთავარი"))
                     .navigationBarTitleDisplayMode(.inline)
             }

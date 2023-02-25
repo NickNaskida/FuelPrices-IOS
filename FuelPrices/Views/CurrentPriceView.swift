@@ -90,7 +90,7 @@ struct CurrentPriceCard: View {
                 }
             }
             Spacer()
-        }.frame(width: 300, height: 260)
+        }.frame(width: 310, height: 260)
             .padding(15)
             .background(Color("CardColor"))
             .overlay(

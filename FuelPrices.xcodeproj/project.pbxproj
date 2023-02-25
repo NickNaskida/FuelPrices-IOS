@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010A467529AA317C0062D945 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010A467429AA317C0062D945 /* HomeView.swift */; };
+		010A467729AA32D90062D945 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010A467629AA32D90062D945 /* Launch Screen.storyboard */; };
 		0118704229A8B4A50013A7D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0118704129A8B4A50013A7D2 /* .gitignore */; };
 		0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118704629A90A590013A7D2 /* CurrentPriceView.swift */; };
 		016D2F4629A7758500787726 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D2F4529A7758500787726 /* Model.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		010A467129A93C400062D945 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		010A467429AA317C0062D945 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		010A467629AA32D90062D945 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0118704129A8B4A50013A7D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0118704629A90A590013A7D2 /* CurrentPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceView.swift; sourceTree = "<group>"; };
 		016D2F4529A7758500787726 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				01A3779529A7D21800B24490 /* LowestPriceView.swift */,
 				01DEBCF429A66B5100BAD43B /* ContentView.swift */,
 				0118704629A90A590013A7D2 /* CurrentPriceView.swift */,
+				010A467429AA317C0062D945 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */,
 				01A3779729A7D2F300B24490 /* Config.swift */,
 				016D2F4529A7758500787726 /* Model.swift */,
+				010A467629AA32D90062D945 /* Launch Screen.storyboard */,
 				01DEBCF629A66B5100BAD43B /* Assets.xcassets */,
 				01DEBCF829A66B5100BAD43B /* Preview Content */,
 			);
@@ -258,6 +264,7 @@
 			files = (
 				01DEBCFA29A66B5100BAD43B /* Preview Assets.xcassets in Resources */,
 				0118704229A8B4A50013A7D2 /* .gitignore in Resources */,
+				010A467729AA32D90062D945 /* Launch Screen.storyboard in Resources */,
 				01DEBCF729A66B5100BAD43B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */,
+				010A467529AA317C0062D945 /* HomeView.swift in Sources */,
 				01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */,
 				016D2F4629A7758500787726 /* Model.swift in Sources */,
 				01A3779829A7D2F300B24490 /* Config.swift in Sources */,
@@ -453,8 +461,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,8 +491,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
