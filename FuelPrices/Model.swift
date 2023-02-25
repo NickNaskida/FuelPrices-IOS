@@ -31,8 +31,8 @@ struct CurrentPriceEntry: Codable, Identifiable {
 struct Fuel: Codable, Hashable {
     let name: String
     let type_alt: String
-    let price: Double
-    let change_rate: Int
+    let price: Float
+    let change_rate: Float
     let date: String
     let last_updated: String
 }

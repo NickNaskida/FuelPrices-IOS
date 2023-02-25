@@ -73,13 +73,15 @@ struct CurrentPriceCard: View {
             VStack {
                 ForEach(item.fuel, id: \.self) { fuel in
                     HStack {
-                        Text(String(format: "%.2f ₾ ", fuel.price)).bold() + Text(fuel.name)
+                        Text(String(format: "%.2f ₾ ", fuel.price)).fontWeight(.bold) + Text(fuel.name)
                         Spacer()
-                        Text(String(format: "%.2f", fuel.change_rate))
-                            .fontWeight(.bold)
+                        Text(String(format: "\(fuel.change_rate > 0 ? "↑" : (fuel.change_rate < 0 ? "↓" : "")) %.2f", abs(fuel.change_rate)))
+                            .font(.subheadline)
                             .padding(.horizontal, 3)
                             .foregroundColor(.white)
-                            .background(Color("BgGreen"))
+                            .background(
+                                fuel.change_rate > 0 ? Color("BgRed") : Color("BgGreen")
+                            )
                             .cornerRadius(4)
                     }.padding(.bottom, 1)
                 }

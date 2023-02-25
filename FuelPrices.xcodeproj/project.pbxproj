@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010A467129A93C400062D945 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0118704129A8B4A50013A7D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0118704629A90A590013A7D2 /* CurrentPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceView.swift; sourceTree = "<group>"; };
 		016D2F4529A7758500787726 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		01DEBCE629A66B5100BAD43B = {
 			isa = PBXGroup;
 			children = (
+				010A467129A93C400062D945 /* README.md */,
 				0118704129A8B4A50013A7D2 /* .gitignore */,
 				01DEBCF129A66B5100BAD43B /* FuelPrices */,
 				01DEBD0229A66B5200BAD43B /* FuelPricesTests */,
