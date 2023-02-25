@@ -9,9 +9,17 @@ import SwiftUI
 
 struct LowestPriceView: View {
     @State var results = [LowestPriceEntry]()
+    @State var isLoading = true
     
     var body: some View {
         LazyVStack {
+            if isLoading {
+                HStack {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color("AccentColor")))
+                }.padding(.vertical, 100)
+            }
+            
             ForEach(results, id: \.id) { item in
                 LowestPriceRow(item: item)
             }
@@ -23,6 +31,7 @@ struct LowestPriceView: View {
             )
             .cornerRadius(15)
             .onAppear(perform: loadLowestPriceData)
+            .padding(.horizontal)
     }
     
     func loadLowestPriceData() {
@@ -37,6 +46,7 @@ struct LowestPriceView: View {
                 if let response = try? JSONDecoder().decode([LowestPriceEntry].self, from: data) {
                     DispatchQueue.main.async {
                         self.results = response
+                        isLoading = false
                     }
                     return
                 }

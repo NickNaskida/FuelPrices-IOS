@@ -10,8 +10,16 @@ import Foundation
 
 struct CurrentPriceView: View {
     @State var current_results = [CurrentPriceEntry]()
+    @State var isLoading = true
     
     var body: some View {
+        if isLoading {
+            VStack(alignment: .center) {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color("AccentColor")))
+            }.frame(width: 390, height: 260)
+        }
+        
         LazyHStack {
             ForEach(current_results, id: \.id) { item in
                 CurrentPriceCard(item: item).cornerRadius(15)
@@ -32,6 +40,7 @@ struct CurrentPriceView: View {
                 if let response = try? JSONDecoder().decode([CurrentPriceEntry].self, from: data) {
                     DispatchQueue.main.async {
                         self.current_results = response
+                        isLoading = false
                     }
                     return
                 }
@@ -42,12 +51,6 @@ struct CurrentPriceView: View {
 
 struct CurrentPriceCard: View {
     let item: CurrentPriceEntry
-    
-//    let dateFormatter: DateFormatter = {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "HH:mm d-MMM-yyyy"
-//        return formatter
-//    }()
     
     var body: some View {
         VStack(alignment: .leading) {

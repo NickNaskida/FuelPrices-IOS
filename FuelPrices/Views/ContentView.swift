@@ -17,7 +17,7 @@ struct ContentView: View {
                         .font(.title3)
                         .fontWeight(.bold)
                         .padding(.vertical)
-                    LowestPriceView().padding(.horizontal)
+                    LowestPriceView()
                     Text("ყველა ფასი")
                         .font(.title3)
                         .fontWeight(.bold)
