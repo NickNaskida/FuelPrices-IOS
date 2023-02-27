@@ -16,10 +16,12 @@ struct ContentView: View {
                 HomeView().tabItem {
                     Image(systemName: "house")
                     Text("მთავარი")
-                }.navigationTitle(Text("მთავარი"))
-                    .navigationBarTitleDisplayMode(.inline)
-                    .dynamicTypeSize(.medium ... .large)
-            }
+                }
+                CompareView().tabItem {
+                    Image(systemName: "arrow.right.arrow.left.square")
+                    Text("შედარება")
+                }
+            }.dynamicTypeSize(.medium ... .large)
         }
     }
 }

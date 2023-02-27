@@ -14,6 +14,7 @@
 		013F4F7E29ACD9F1008B9A24 /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F7D29ACD9F1008B9A24 /* CompareView.swift */; };
 		013F4F8129ACDA15008B9A24 /* Lowest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F8029ACDA15008B9A24 /* Lowest.swift */; };
 		013F4F8329ACDA21008B9A24 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F8229ACDA21008B9A24 /* Current.swift */; };
+		013F4F8529ACE2EC008B9A24 /* Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F8429ACE2EC008B9A24 /* Compare.swift */; };
 		01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779529A7D21800B24490 /* LowestPriceView.swift */; };
 		01A3779829A7D2F300B24490 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779729A7D2F300B24490 /* Config.swift */; };
 		01DEBCF329A66B5100BAD43B /* FuelPricesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */; };
@@ -51,6 +52,7 @@
 		013F4F7D29ACD9F1008B9A24 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
 		013F4F8029ACDA15008B9A24 /* Lowest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lowest.swift; sourceTree = "<group>"; };
 		013F4F8229ACDA21008B9A24 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		013F4F8429ACE2EC008B9A24 /* Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compare.swift; sourceTree = "<group>"; };
 		01A3779529A7D21800B24490 /* LowestPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestPriceView.swift; sourceTree = "<group>"; };
 		01A3779729A7D2F300B24490 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				013F4F8029ACDA15008B9A24 /* Lowest.swift */,
 				013F4F8229ACDA21008B9A24 /* Current.swift */,
+				013F4F8429ACE2EC008B9A24 /* Compare.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */,
+				013F4F8529ACE2EC008B9A24 /* Compare.swift in Sources */,
 				013F4F8329ACDA21008B9A24 /* Current.swift in Sources */,
 				010A467529AA317C0062D945 /* HomeView.swift in Sources */,
 				01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */,
