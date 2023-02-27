@@ -79,7 +79,7 @@ struct CurrentPriceCard: View {
                         Text(String(format: "%.2f ₾ ", fuel.price))
                             .foregroundColor(Color("AccentColor")).fontWeight(.bold) + Text(fuel.name)
                         Spacer()
-                        Text(String(format: "\(fuel.change_rate > 0 ? "↑" : (fuel.change_rate < 0 ? "↓" : "")) %.2f", abs(fuel.change_rate)))
+                        Text(String(format: "\(fuel.change_rate > 0 ? "↑ " : (fuel.change_rate < 0 ? "↓ " : ""))%.2f", abs(fuel.change_rate)))
                             .font(.subheadline)
                             .padding(.horizontal, 3)
                             .foregroundColor(.white)
