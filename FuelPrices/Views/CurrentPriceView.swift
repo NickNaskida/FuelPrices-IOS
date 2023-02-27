@@ -29,7 +29,7 @@ struct CurrentPriceView: View {
     }
     
     func loadCurrentPriceData() {
-        guard let url = URL(string: "\(Config.APIBaseUrl)/api/current/") else {
+        guard let url = URL(string: "\(Config.APIBaseUrl)/current/") else {
             print("Current price API endpoint is Invalid")
             return
         }

@@ -11,7 +11,9 @@
 		010A467729AA32D90062D945 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010A467629AA32D90062D945 /* Launch Screen.storyboard */; };
 		0118704229A8B4A50013A7D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0118704129A8B4A50013A7D2 /* .gitignore */; };
 		0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118704629A90A590013A7D2 /* CurrentPriceView.swift */; };
-		016D2F4629A7758500787726 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D2F4529A7758500787726 /* Model.swift */; };
+		013F4F7E29ACD9F1008B9A24 /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F7D29ACD9F1008B9A24 /* CompareView.swift */; };
+		013F4F8129ACDA15008B9A24 /* Lowest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F8029ACDA15008B9A24 /* Lowest.swift */; };
+		013F4F8329ACDA21008B9A24 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F4F8229ACDA21008B9A24 /* Current.swift */; };
 		01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779529A7D21800B24490 /* LowestPriceView.swift */; };
 		01A3779829A7D2F300B24490 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3779729A7D2F300B24490 /* Config.swift */; };
 		01DEBCF329A66B5100BAD43B /* FuelPricesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */; };
@@ -46,7 +48,9 @@
 		010A467629AA32D90062D945 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0118704129A8B4A50013A7D2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		0118704629A90A590013A7D2 /* CurrentPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceView.swift; sourceTree = "<group>"; };
-		016D2F4529A7758500787726 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		013F4F7D29ACD9F1008B9A24 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
+		013F4F8029ACDA15008B9A24 /* Lowest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lowest.swift; sourceTree = "<group>"; };
+		013F4F8229ACDA21008B9A24 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		01A3779529A7D21800B24490 /* LowestPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestPriceView.swift; sourceTree = "<group>"; };
 		01A3779729A7D2F300B24490 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		01DEBCEF29A66B5100BAD43B /* Fuel Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +97,18 @@
 				01DEBCF429A66B5100BAD43B /* ContentView.swift */,
 				0118704629A90A590013A7D2 /* CurrentPriceView.swift */,
 				010A467429AA317C0062D945 /* HomeView.swift */,
+				013F4F7D29ACD9F1008B9A24 /* CompareView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		013F4F7F29ACD9FE008B9A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				013F4F8029ACDA15008B9A24 /* Lowest.swift */,
+				013F4F8229ACDA21008B9A24 /* Current.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		01DEBCE629A66B5100BAD43B = {
@@ -122,10 +136,10 @@
 		01DEBCF129A66B5100BAD43B /* FuelPrices */ = {
 			isa = PBXGroup;
 			children = (
+				013F4F7F29ACD9FE008B9A24 /* Models */,
 				0118704329A8B6220013A7D2 /* Views */,
 				01DEBCF229A66B5100BAD43B /* FuelPricesApp.swift */,
 				01A3779729A7D2F300B24490 /* Config.swift */,
-				016D2F4529A7758500787726 /* Model.swift */,
 				010A467629AA32D90062D945 /* Launch Screen.storyboard */,
 				01DEBCF629A66B5100BAD43B /* Assets.xcassets */,
 				01DEBCF829A66B5100BAD43B /* Preview Content */,
@@ -291,11 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0118704729A90A590013A7D2 /* CurrentPriceView.swift in Sources */,
+				013F4F8329ACDA21008B9A24 /* Current.swift in Sources */,
 				010A467529AA317C0062D945 /* HomeView.swift in Sources */,
 				01A3779629A7D21800B24490 /* LowestPriceView.swift in Sources */,
-				016D2F4629A7758500787726 /* Model.swift in Sources */,
 				01A3779829A7D2F300B24490 /* Config.swift in Sources */,
+				013F4F8129ACDA15008B9A24 /* Lowest.swift in Sources */,
 				01DEBCF529A66B5100BAD43B /* ContentView.swift in Sources */,
+				013F4F7E29ACD9F1008B9A24 /* CompareView.swift in Sources */,
 				01DEBCF329A66B5100BAD43B /* FuelPricesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

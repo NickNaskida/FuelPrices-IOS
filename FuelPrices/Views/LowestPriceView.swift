@@ -35,7 +35,7 @@ struct LowestPriceView: View {
     }
     
     func loadLowestPriceData() {
-        guard let url = URL(string: "\(Config.APIBaseUrl)/api/lowest/") else {
+        guard let url = URL(string: "\(Config.APIBaseUrl)/lowest/") else {
             print("Lowest price API endpoint is Invalid")
             return
         }
