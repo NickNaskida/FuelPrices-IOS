@@ -79,14 +79,16 @@ struct CurrentPriceCard: View {
                         Text(String(format: "%.2f ₾ ", fuel.price))
                             .foregroundColor(Color("AccentColor")).fontWeight(.bold) + Text(fuel.name)
                         Spacer()
-                        Text(String(format: "\(fuel.change_rate > 0 ? "↑ " : (fuel.change_rate < 0 ? "↓ " : ""))%.2f", abs(fuel.change_rate)))
-                            .font(.subheadline)
-                            .padding(.horizontal, 3)
-                            .foregroundColor(.white)
-                            .background(
-                                fuel.change_rate > 0 ? Color("BgRed") : Color("BgGreen")
-                            )
-                            .cornerRadius(4)
+                        if fuel.change_rate != 0 {
+                            Text(
+                                String(format: "\(fuel.change_rate > 0 ? "↑" : (fuel.change_rate < 0 ? "↓" : "")) %.2f", abs(fuel.change_rate))
+                            ).font(.subheadline)
+                                .padding(.horizontal, 3)
+                                .foregroundColor(
+                                    fuel.change_rate > 0 ? Color("BgRed") : Color("BgGreen")
+                                )
+                                .cornerRadius(4)
+                        }
                     }.padding(.bottom, 1)
                 }
             }
