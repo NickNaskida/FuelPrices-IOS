@@ -1,7 +1,7 @@
 <div align="center">
-    <img src="https://github.com/NickNaskida/FuelPrices/blob/master/app/src/static/img/logo.png" width="140" title="Logo">
+    <img src="https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/347241703_778987680624954_5137381480768797673_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgpb3mXOYH-dPpS-TkbHzFjd3Ni_F8bruN3c2L8Xxuu0jzSiChKulcGDzgj4O8wFzLyFSqp8zOK5tin_BnfA-v&_nc_ohc=NGKNF7EjZOMQ7kNvgF0xBA5&_nc_ht=scontent.ftbs5-3.fna&oh=00_AYAKC12fnVbMA9XuFRoG0emxGlCK1S_bUVc7CCWwqJRjug&oe=6657CF5A" width="140" title="Logo">
     <h1>Fuel Prices IOS</h1>
-    <small> <a href="https://github.com/NickNaskida/FuelPrices">Web Client</a> </small>
+<!--     <small> <a href="https://petrol.com.ge">Web Client</a> </small> -->
 </div>
 
 ### 🗃 About Project
@@ -19,7 +19,7 @@ monitor, compare fuel prices, and use API to access current prices
 You can change it in `Config.swift`
 
 ```
-  https://sawvavi.tk/api/
+  https://api.petrol.com.ge
 ```
 
 ### 👨🏼‍🔬 Contributing
